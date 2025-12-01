@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Routers
 from routers.chat import router as chat_router
+from routers.auth import router as auth_router  # Auth router qo'shish
 
 # Kredit bo‘limi
 from kredit_hisoblash import hisobla_kredit
@@ -43,6 +44,10 @@ def home():
 
 # -------------------- CHAT ROUTES ----------------------
 app.include_router(chat_router)
+
+
+# -------------------- AUTH ROUTES ----------------------
+app.include_router(auth_router)
 
 
 # -------------------- CREDIT API -----------------------
