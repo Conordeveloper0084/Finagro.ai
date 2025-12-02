@@ -1,10 +1,13 @@
 fastapi==0.110.0
 uvicorn==0.29.0
 
-# Pydantic 2.x → Rust talab qiladi → Railway’da ko‘pincha build bo‘lmaydi.
-# Shuning uchun 1.x qo‘llaymiz (barqaror)
-pydantic==1.10.13
+pydantic==2.6.1
+pydantic-core==2.14.6
+
+pydantic-settings==2.1.0
 
 openai==1.12.0
-python-dotenv==1.0.1
 httpx==0.27.0
+python-dotenv==1.0.1
+pytest==8.1.1
+pytest-asyncio==0.23.5
